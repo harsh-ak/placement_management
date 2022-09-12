@@ -1,0 +1,20 @@
+<odoo>
+
+#position Action	
+
+	<record id="action_position"
+		model="ir.actions.act_window">
+		<field name="name">Position</field>
+		<field name="res_model">position.position</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+#Menu
+
+	<menuitem id = "position_main_menu"
+	name = "Positions"
+	parent="placement_main_menu"
+	action="action_position"/>
+
+
+</odoo>

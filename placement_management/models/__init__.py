@@ -1,1 +1,1 @@
-from . import student
+from . import applicant,recruiter,position

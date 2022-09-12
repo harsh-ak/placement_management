@@ -1,0 +1,73 @@
+<odoo>
+
+#recruiter Action	
+
+	<record id="action_recruiter"
+		model="ir.actions.act_window">
+		<field name="name">Recruiters</field>
+		<field name="res_model">recruiter.recruiter</field>
+		<field name="view_mode">tree,form</field>
+	</record>
+
+#Menu
+
+	<menuitem id = "recruiter_main_menu"
+	name = "Recruiters"
+	parent="placement_main_menu"
+	action="action_recruiter"/>
+
+
+	#recruiter Tree view
+	<record id="view_recruiter_tree" model="ir.ui.view">
+
+		<field name="name">recruiter.tree</field>
+		<field name="model">recruiter.recruiter</field>
+		<field name="arch" type="xml">
+			
+			<tree>
+				
+				<field name="name"/>
+				<field name="company_name"/>
+				<field name="location"/>
+				<field name="vacant_pos" widget="many2many_tags"/>
+				
+
+			</tree>
+			
+		</field>
+
+	</record>
+
+
+
+	#recruiter Form view
+
+	<record id="view_recruiter_form" model="ir.ui.view">
+
+		<field name="name">recruiter.form</field>
+		<field name="model">recruiter.recruiter</field>
+		<field name="arch" type="xml">
+			<form>
+				<sheet>
+					<group>
+
+						<field name="name"/>
+						<field name="company_name"/>
+						<field name="location"/>
+						<field name="vacant_pos" widget="many2many_tags"/>
+						<field name="description"/>
+						<field name="work_type"/>
+						
+
+						
+					</group>
+				</sheet>
+				
+
+			</form>
+		</field>
+
+	</record>
+
+
+</odoo>

@@ -1,0 +1,10 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+placement_management.access_applicants_applicants,access_applicants_applicants,placement_management.model_applicants_applicants,base.group_user,1,1,1,1
+
+
+placement_management.access_recruiter_recruiter,access_recruiter_recruiter,placement_management.model_recruiter_recruiter,base.group_user,1,1,1,1
+
+placement_management.access_position_position,access_position_position,placement_management.model_position_position,base.group_user,1,1,1,1
+
+placement_management.access_jobs_jobs,access_jobs_jobs,placement_management.model_jobs_jobs,base.group_user,1,1,1,1
